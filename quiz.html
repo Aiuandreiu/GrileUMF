@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GrileUMF</title>
+  <link id="theme-link" rel="stylesheet" href="quiz-styles.css"> <!-- Link to the CSS stylesheet -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="img/logo.png" alt="Logo" class="logo"> <!-- Logo on the left -->
+      <span>GrileUMF</span>
+    </div>
+    <div class="navbar-right"> <!-- Container to hold links on the right -->
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Quizzes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+  
+  <!-- Main content containing the quiz -->
+  <main>
+    <div class="quiz-wrapper">
+      <div id="quizContainer">
+        <!-- Quiz content will be dynamically rendered here by JavaScript -->
+      </div>
+
+      <!-- Navigation controls for the quiz -->
+      <div class="controls">
+        <button id="prevButton" disabled>Previous</button>
+        <button id="submitButton">Submit</button>
+        <button id="nextButton">Next</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer with copyright information -->
+  <footer>
+    <p>© 2024 Quiz Website</p>
+  </footer>
+
+  <!-- JavaScript files for quiz logic and theme switching -->
+  <script src="quiz-scripts.js"></script> 
+</body>
+</html>

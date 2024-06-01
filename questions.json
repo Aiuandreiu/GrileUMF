@@ -1,0 +1,47 @@
+[
+  {
+    "questionText": "What is the capital of France?",
+    "options": [
+      { "text": "Paris" },
+      { "text": "London" },
+      { "text": "Berlin" }
+    ],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionText": "What is 2 + 2?",
+    "options": [
+      { "text": "3" },
+      { "text": "4" },
+      { "text": "5" }
+    ],
+    "correctAnswer": "4"
+  },
+  {
+    "questionText": "Which planet is known as the Red Planet?",
+    "options": [
+      { "text": "Earth" },
+      { "text": "Mars" },
+      { "text": "Jupiter" }
+    ],
+    "correctAnswer": "Mars"
+  },
+  {
+    "questionText": "What is the chemical symbol for gold?",
+    "options": [
+      { "text": "Au" },
+      { "text": "Ag" },
+      { "text": "Fe" }
+    ],
+    "correctAnswer": "Au"
+  },
+  {
+    "questionText": "Which organ is responsible for pumping blood through the body?",
+    "options": [
+      { "text": "Heart" },
+      { "text": "Liver" },
+      { "text": "Lungs" }
+    ],
+    "correctAnswer": "Heart"
+  }
+]

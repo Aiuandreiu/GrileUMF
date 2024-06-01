@@ -1,0 +1,161 @@
+/* General styling and fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Font for the entire page */
+  background-color: #f5f5f5; /* Light gray background for the page */
+  color: #333; /* Dark text color */
+  transition: background-color 0.5s, color 0.5s; /* Smooth transitions for theme switching */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Ensure proper alignment */
+  align-items: center;
+  padding: 20px;
+  background-color: #2b2b2b;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-left {
+  display: flex; /* Ensures alignment for child elements */
+  align-items: center; /* Aligns vertically */
+  font-weight: bold;
+}
+
+.navbar-right {
+    display: flex; /* Use flex layout to align links horizontally */
+    justify-content: flex-end; /* Align content to the right */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 20px; /* Spacing between links */
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+/* Styling for the header and footer */
+header, footer {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  text-align: center; /* Centered text */
+  padding: 15px; /* Padding around content */
+  border-bottom: 1px solid #ddd; /* Light gray border */
+}
+
+footer p {
+  margin: 0; /* No margin for the footer text */
+}
+
+/* Styling for the quiz layout */
+main {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 80vh; /* Occupy most of the page */
+}
+
+/* Styling for the quiz wrapper */
+.quiz-wrapper {
+  background-color: #ffffff; /* White background */
+  padding: 30px; /* Padding around content */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin: 20px; /* Margin around the wrapper */
+  animation: fadeIn 0.5s; /* Animation for fade-in effect */
+}
+
+/* Styling for the quiz controls */
+.controls {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-around; /* Distribute controls evenly */
+  padding: 10px; /* Padding around the controls */
+  margin-top: 25px; /* Margin above the controls */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 25px; /* Padding around the button */
+  background-color: #76a6ff; /* White background */
+  color: #ffffff; /* Dark text color */
+  border: 1px solid #76a6ff;
+  border-radius: 20px; /* Rounded corners */
+  width: 120px; /* Set button width */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #e6e6e6; /* Light gray background on hover */
+  color: #000000;
+  border: 1px solid #e6e6e6;
+  transform: translateY(-2px); /* Slight upward shift on hover */
+}
+
+/* Option Labels for Quiz */
+.option-label {
+  display: block; /* Display as a block element */
+  padding: 10px; /* Padding around the content */
+  border-radius: 5px; /* Border radius for rounded corners */
+  border: none; /* Remove the border */
+  margin-bottom: 10px; /* Margin between options */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.option-label:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.option-label.selected {
+  border: 2px solid blue; /* Indicate selection with a blue border */
+}
+
+.option-label.correct {
+  border: 2px solid green; /* Indicate correct answer with a green border */
+  color: green; /* Change text color to green */
+}
+
+.option-label.incorrect {
+  border: 2px solid red; /* Indicate incorrect answer with a red border */
+  color: red; /* Change text color to red */
+}
+
+/* General fade-in animation for question and answer options */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully invisible */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+  }
+}
+
+/* Styling for elements that fade in */
+.fade-in {
+  opacity: 0; /* Initially invisible */
+  animation: fadeIn 0.5s ease-in-out; /* Animation with 1-second duration */
+  animation-fill-mode: forwards; /* Keep final state after animation ends */
+}
+
+/* Staggered delays for multiple answer options */
+.fade-in-delayed-1 {
+  animation-delay: 0.3s; /* Add a half-second delay */
+}
+
+.fade-in-delayed-2 {
+  animation-delay: 0.6s; /* Add a one-second delay */
+}
+
+.fade-in-delayed-3 {
+  animation-delay: 0.9s; /* Add a one-and-a-half-second delay */
+}
